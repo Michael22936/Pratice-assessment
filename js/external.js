@@ -78,6 +78,12 @@ console.log(isTwo(random));
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+function calculateTip(num1, num2) {
+    return num1 * num2;
+}
+
+console.log(calculateTip(.15,33.42));
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
