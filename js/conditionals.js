@@ -54,20 +54,20 @@ console.log(analyzeColor(randomColor));
  * Refactor your above function to use a switch-case statement
  */
 
-function analyzeColor2(color) {
-
-    switch (color) {
-        case "red":
-            alert( "Strawberries are red");
-            break;
-        case "blue":
-            alert("the sky is blue");
-            break;
-        default:
-            alert("i dont know that " + color)
-    }
-
-}
+// function analyzeColor2(color) {
+//
+//     switch (color) {
+//         case "red":
+//             alert( "Strawberries are red");
+//             break;
+//         case "blue":
+//             alert("the sky is blue");
+//             break;
+//         default:
+//             alert("i dont know that " + color)
+//     }
+//
+// }
 
 /**
  * TODO:
@@ -75,6 +75,24 @@ function analyzeColor2(color) {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+function analyzeColor3(str) {
+    var userColorChose = prompt("Pick a color.");
+    switch (userColorChose) {
+        case "blue":
+            alert ("Thats the color of the sky");
+            break;
+        case  "red":
+            alert("Apples are red");
+            break;
+        default:
+            alert("I dont know anything about " + str);
+
+    }
+
+}
+
+analyzeColor3();
 
 /* ########################################################################## */
 
