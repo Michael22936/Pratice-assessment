@@ -115,3 +115,9 @@ userBill();
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount(original, discount) {
+    return original - (original * discount)
+}
+
+console.log(applyDiscount(100, .2))
