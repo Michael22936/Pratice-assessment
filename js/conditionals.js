@@ -26,8 +26,8 @@ function analyzeColor(color) {
         return "blue is the color of the sky"
     }else if (color === "red"){
         return "Strawberries are red"
-    } else if (color === "cyan"){
-        return "i dont know cyan"
+    } else {
+        return "i dont know that color " + color
     }
 
 }
@@ -47,12 +47,27 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-console.log(analyzeColor());
+console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+
+function analyzeColor2(color) {
+
+    switch (color) {
+        case "red":
+            alert( "Strawberries are red");
+            break;
+        case "blue":
+            alert("the sky is blue");
+            break;
+        default:
+            alert("i dont know that " + color)
+    }
+
+}
 
 /**
  * TODO:
