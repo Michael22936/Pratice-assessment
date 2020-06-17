@@ -91,15 +91,15 @@ console.log(calculateTip(.15,33.42));
  * then display the dollar amount they should tip
  */
 
-// function userBill() {
-//
-//     var totalAmount = prompt("how much was your bill?");
-//     var percent = prompt("how much perecnt");
-//     return alert(totalAmount*(percent/100));
-//
-// }
-//
-// userBill();
+function userBill() {
+
+    var totalAmount = prompt("how much was your bill?");
+    var percent = prompt("how much perecnt");
+    return alert(totalAmount*(percent/100));
+
+}
+
+userBill();
 
 /**
  * TODO:

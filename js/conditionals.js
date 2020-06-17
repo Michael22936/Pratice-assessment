@@ -178,3 +178,19 @@ calculateTotal1(luckyNumber);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+var userconfirm = confirm("would you like to enter a number");
+
+if (userconfirm === true){
+   var usernumber = prompt("Enter a number");
+
+   if (usernumber %= 0){
+       alert("ever")
+   }else{
+       alert("odd")
+   }
+
+   alert(usernumber + 100);
+
+   alert(Math.sign(usernumber))
+}
