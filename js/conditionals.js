@@ -117,6 +117,9 @@ analyzeColor3();
  */
 
 function  calculateTotal(lucky, total){
+
+
+
      if (lucky === 4){
         return total / 2;
     }else if (lucky === 5){
@@ -136,7 +139,28 @@ console.log(calculateTotal(5,100));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+
+function  calculateTotal1(luckyNumber){
+
+    var userTotal = prompt('What is your total bill?')
+
+    if (luckyNumber === 4){
+        alert("you just got 50% off!!!")
+        alert("Your total was " + userTotal)
+        alert("now your total is " + userTotal / 2)
+        return userTotal / 2;
+    }else if (luckyNumber === 5){
+        alert("your bill is free!!")
+        alert("your total was " + userTotal)
+        alert('Now it is ' + 0)
+        return 0;
+    }else{
+        return userTotal
+    }
+}
+
+calculateTotal1(luckyNumber);
 
 /**
  * TODO:
