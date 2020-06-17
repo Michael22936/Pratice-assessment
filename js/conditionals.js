@@ -54,20 +54,20 @@ console.log(analyzeColor(randomColor));
  * Refactor your above function to use a switch-case statement
  */
 
-// function analyzeColor2(color) {
-//
-//     switch (color) {
-//         case "red":
-//             alert( "Strawberries are red");
-//             break;
-//         case "blue":
-//             alert("the sky is blue");
-//             break;
-//         default:
-//             alert("i dont know that " + color)
-//     }
-//
-// }
+function analyzeColor2(color) {
+
+    switch (color) {
+        case "red":
+            alert( "Strawberries are red");
+            break;
+        case "blue":
+            alert("the sky is blue");
+            break;
+        default:
+            alert("i dont know that " + color)
+    }
+
+}
 
 /**
  * TODO:
@@ -115,6 +115,18 @@ analyzeColor3();
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+
+function  calculateTotal(lucky, total){
+     if (lucky === 4){
+        return total / 2;
+    }else if (lucky === 5){
+        return 0;
+    }else{
+        return total
+    }
+}
+
+console.log(calculateTotal(5,100));
 
 /**
  * TODO:
